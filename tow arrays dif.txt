@@ -1,0 +1,41 @@
+ALGORITHM find all distict element in tow arrays
+
+var:
+list1:array[5]
+list2:array[4]
+i,j:integer
+some:integer:=0
+some2:integer:=0
+
+BEGIN
+
+write('first list')
+write('second list')
+read(list1)
+read(list2)
+
+FOR i from 0 to list1.length-1 DO
+IF(list2.indexOf(list1[i])===-1)
+some+=list1[i]
+ENDIF
+ENDFOR
+
+FOR j form 0to list2.length-1 DO
+IF(list1.indexOf(list2[j])===-1)
+some+=list1[j]
+ENDIF
+ENDFOR
+
+FOR i from 0 to list1.length-1 DO
+IF(list2.indexOf(list1[i])!==-1)
+some2+=list1[i]
+ENDIF
+ENDFOR
+
+FOR j form 0to list2.length-1 DO
+IF(list1.indexOf(list2[j])!==-1)
+some2+=list1[j]
+ENDIF
+ENDFOR
+
+END
